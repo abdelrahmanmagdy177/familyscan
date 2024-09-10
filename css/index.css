@@ -213,7 +213,7 @@
 
     .floating-buttons .whatsapp-button,
     .floating-buttons .facebook-button,
-    .floating-buttons .instagram-button
+    .floating-buttons .instagram-button,
     .floating-buttons .tiktok-button
 {
         animation: infinity 2s infinite; /* Apply the animation */
