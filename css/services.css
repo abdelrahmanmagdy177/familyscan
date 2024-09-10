@@ -1,0 +1,77 @@
+/* Full viewport height styling */
+.full-height {
+    height: 100vh; /* Full viewport height */
+}
+
+/* Background image styling */
+.image-side {
+    background-image: url('../123.png');
+    background-size: 120%; /* Scale the image to 120% of the container size */
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    background-repeat: no-repeat;
+}
+
+/* Text section styling */
+.text-side {
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text inside text container */
+}
+
+.text-side h1 {
+    font-size: 55px;
+    color: #333; /* Text color */
+}
+
+/* Ensures the card images are responsive and maintain aspect ratio */
+.card-img-top {
+    width: 100%; /* Make sure the image takes the full width of the card */
+    height: 200px; /* Fixed height for consistent card layout */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.card {
+    border-radius: 14px;
+}
+
+.card-body {
+    height: 260px;
+    font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 150px; /* Adjust height for smaller screens */
+    }
+}
+
+
+
+
+
+/* Footer styling */
+.footer {
+    background-color: #343a40; /* Dark background */
+    color: #f8f9fa; /* Light text color */
+    padding: 20px 0; /* Add padding for better spacing */
+    text-align: center;
+}
+
+.footer .social-icons {
+    margin-top: 15px;
+}
+
+.footer .social-icons a {
+    font-size: 1.5rem; /* Larger icons */
+    margin: 0 10px; /* Space between icons */
+    color: #f8f9fa; /* Icon color */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer .social-icons a:hover {
+    color: #adb5bd; /* Light gray on hover */
+}

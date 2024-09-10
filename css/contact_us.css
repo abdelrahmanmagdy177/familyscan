@@ -1,0 +1,67 @@
+.con {
+    background-color: rgba(211, 104, 147, 0.4); /* Semi-transparent background */
+    padding: 20px; /* Reduced padding for better responsiveness */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin: 40px auto; /* Adjust margin for better spacing */
+    width: 30%; /* Ensure it scales down on smaller screens */
+}
+
+/* Heading styling */
+.con h1 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2em; /* Adjust heading size for responsiveness */
+    color: var(--second-color); /* Set heading color for contrast */
+    text-align: center; /* Center text */
+    font-weight: bold;
+}
+
+/* Form element styling */
+.con input,
+.con select,
+.con textarea,
+.con button {
+    width: 80%; /* Full width of the container */
+    margin: auto auto 15px auto; /* Space between fields */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 6px; /* Rounded corners */
+    padding: 10px; /* Padding inside fields */
+    font-size: 1em; /* Font size for input text */
+    text-align: right; /* Align text and placeholder */
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Placeholder styling */
+.con input::placeholder,
+.con textarea::placeholder {
+    color: #888; /* Placeholder text color */
+}
+
+/* Select dropdown styling */
+.con select {
+    height: auto; /* Allow height to adjust based on content */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .con {
+        padding: 15px; /* Adjust padding */
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 100px auto 20px auto; /* Increase top margin for mobile */
+    }
+
+    .con h1 {
+        font-size: 1.75em; /* Adjust heading size */
+    }
+}
+
+/* Textarea specific styling */
+.con textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 80px; /* Minimum height for the textarea */
+}

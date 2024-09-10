@@ -1,0 +1,309 @@
+/* Full viewport height styling */
+.full-height {
+    height: 100vh; /* Full viewport height */
+}
+
+/* Background image styling */
+.image-side {
+    background-image: url('../123.png');
+    background-size: 120%; /* Scale the image to 120% of the container size */
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    background-repeat: no-repeat;
+}
+
+/* Text section styling */
+.text-side {
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text inside text container */
+}
+
+
+.text-side h1 {
+    font-size: 55px;
+    margin: 0;
+    color: #333; /* Text color */
+}
+
+.text-side .main_title {
+    color: var(--second-color);
+}
+
+
+
+/* Ensures the card images are responsive and maintain aspect ratio */
+.card-img-top {
+    width: 100%; /* Make sure the image takes the full width of the card */
+    height: 200px; /* Fixed height for consistent card layout */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+.card{
+    border-radius: 14px;
+}
+.card-body{
+    height: 250px;font-size: 17px;
+
+}
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 150px; /* Adjust height for smaller screens */
+    }
+}
+
+/* Why Us section styling */
+/* Why Us section styling */
+.why_us_container {
+    position: relative; /* Ensure the container has a positioning context for the pseudo-element */
+    margin: 40px auto; /* Add space above and below, centered horizontally */
+    width: 55%; /* Make it more flexible with relative width */
+    max-width: 1200px; /* Optional: set a max-width for larger screens */
+    border-radius: 7px;
+    overflow: hidden; /* Prevent content from overflowing */
+    padding: 20px; /* Adjust padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visual appearance */
+}
+
+.why_us_container::before {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Position it absolutely within the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--third-color); /* Background color of the container */
+    opacity: 0.33; /* Opacity for the background */
+    z-index: -1; /* Ensure it is behind the content */
+}
+
+.why_us_container h1,
+.why_us_container p {
+    position: relative; /* Ensure text is positioned above the pseudo-element */
+    color: var(--second-color);
+}
+
+.why_us_container h1 {
+    font-weight: bold;
+    font-size: 2em; /* Adjust font size relative to container */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.why_us_container p {
+    text-align: right;
+    font-size: 1.2em; /* Adjust font size relative to container */
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .why_us_container {
+        width: 95%; /* Adjust width for medium screens */
+        padding: 15px; /* Adjust padding for medium screens */
+    }
+
+    .why_us_container h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .why_us_container p {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .why_us_container {
+        width: 80%; /* Full width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .why_us_container h1 {
+        font-size: 1.2em; /* Adjust font size for small screens */
+    }
+
+    .why_us_container p {
+        font-size: 0.9em; /* Adjust font size for small screens */
+    }
+}
+
+/* FAQ section styling */
+.FAQ {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 30px 0; /* Top and bottom padding */
+    width: 55%;
+    margin: 40px auto; /* Add space above and below, centered horizontally */
+}
+
+@media (max-width: 767px) {
+    .FAQ {
+        width: 80%; /* Full width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+    .accordion-button {
+        background-color: #007bff; /* Primary button color */
+        color: white; /* Button text color */
+        font-weight: bold; /* Button text weight */
+        border: none; /* Remove border */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: #0056b3; /* Darker color when expanded */
+        color: white; /* Ensure text color is readable */
+    }
+
+    .accordion-button:hover {
+        background-color: #0056b3; /* Color on hover */
+    }
+
+    .accordion-body {
+        background-color: white; /* White background for body */
+        color: #333; /* Text color */
+        padding: 20px; /* Padding inside the body */
+        border-top: 1px solid #e9ecef; /* Border at the top */
+    }
+
+    .accordion-item {
+        border: 1px solid #e9ecef; /* Border around each item */
+        border-radius: 5px; /* Rounded corners */
+        margin-bottom: 10px; /* Spacing between items */
+    }
+
+    /* Floating Action Buttons styling */
+    .floating-buttons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .floating-buttons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    /* Infinity animation for social media buttons */
+    @keyframes infinity {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px); /* Adjust height as needed */
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .floating-buttons .whatsapp-button,
+    .floating-buttons .facebook-button,
+    .floating-buttons .instagram-button {
+        animation: infinity 2s infinite; /* Apply the animation */
+    }
+
+    .whatsapp-button {
+        background-color: #25D366; /* WhatsApp green */
+    }
+
+    .whatsapp-button:hover {
+        background-color: #1ebe5a;
+    }
+
+    .facebook-button {
+        background-color: #3b5998; /* Facebook blue */
+    }
+
+    .facebook-button:hover {
+        background-color: #2d4373;
+    }
+
+    .instagram-button {
+        background-color: #c13584; /* Instagram pink */
+    }
+
+    .instagram-button:hover {
+        background-color: #bc2a8d;
+    }
+
+    #upButton {
+        display: none; /* Hide initially */
+        background-color: #343a40; /* Dark color for the up button */
+        color: white;
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s, transform 0.3s;
+    }
+
+    #upButton:hover {
+        background-color: #495057;
+        cursor: pointer;
+    }
+
+    .fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .fade-out {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    /* Footer styling */
+    .footer {
+        background-color: #343a40; /* Dark background */
+        color: #f8f9fa; /* Light text color */
+        padding: 20px 0; /* Add padding for better spacing */
+        text-align: center;
+    }
+
+    .footer .social-icons {
+        margin-top: 15px;
+    }
+
+    .footer .social-icons a {
+        font-size: 1.5rem; /* Larger icons */
+        margin: 0 10px; /* Space between icons */
+        color: #f8f9fa; /* Icon color */
+        transition: color 0.3s; /* Smooth color transition */
+    }
+
+    .footer .social-icons a:hover {
+        color: #adb5bd; /* Light gray on hover */
+    }
+
+
+@media (max-width: 767px) {
+    .image-side {
+        display: none; /* Adjust height for smaller screens */
+        .text-side{
+            height: 50vh;
+            margin-bottom: 10px;
+        }
+        .text-side h1 {
+            font-size: 10px
+        }
+    }
+}
