@@ -213,7 +213,9 @@
 
     .floating-buttons .whatsapp-button,
     .floating-buttons .facebook-button,
-    .floating-buttons .instagram-button {
+    .floating-buttons .instagram-button
+    .floating-buttons .tiktok-button
+{
         animation: infinity 2s infinite; /* Apply the animation */
     }
 
@@ -240,6 +242,10 @@
     .instagram-button:hover {
         background-color: #bc2a8d;
     }
+.tiktok-button{
+    background-color: #fe2c55; /* TikTok Red */
+}
+
 
     #upButton {
         display: none; /* Hide initially */
