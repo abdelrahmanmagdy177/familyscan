@@ -182,6 +182,13 @@
         align-items: center;
         z-index: 1000;
     }
+    .floating-buttons .call_us-button{
+        color:white;
+        background-color: green;
+        position: fixed;
+        left: 0;
+        bottom :0;
+    }
 
     .floating-buttons a {
         display: flex;
@@ -212,9 +219,7 @@
     }
 
     .floating-buttons .whatsapp-button,
-    .floating-buttons .facebook-button,
-    .floating-buttons .instagram-button,
-    .floating-buttons .tiktok-button
+    .floating-buttons .call_us-button
 {
         animation: infinity 2s infinite; /* Apply the animation */
     }

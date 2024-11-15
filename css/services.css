@@ -75,4 +75,33 @@
 .footer .social-icons a:hover {
     color: #adb5bd; /* Light gray on hover */
 }
+.contact-section {
+    width: 100%;
+    height: 150px;
+}
 
+        .contact-section .btn {
+            font-size: 1.2rem;  /* Increase button font size */
+            padding: 10px 20px; /* Add padding for better spacing */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+        }
+
+        .contact-section .btn i {
+            margin-right: 10px; /* Space out the icon and text */
+        }
+
+        .contact-section .btn:hover {
+            background-color: #0056b3; /* Change background color on hover */
+            transform: translateY(-2px); /* Slightly raise the button on hover */
+        }
+
+        .social-icons a {
+            font-size: 2rem; /* Increase icon size */
+            margin: 0 15px; /* Add spacing between icons */
+            transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2); /* Make icons larger on hover */
+            color: #0d6efd; /* Change icon color on hover */
+        }

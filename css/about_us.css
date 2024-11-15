@@ -37,14 +37,35 @@ header {
     font-size: 3em;
 }
 
-.numbers {
-    width: 50%; /* Match width to about_us or adjust as needed */
-    height: 50px;
-    border: 3px solid #d36893;
-    text-align: center;
-    line-height: 40px;
-    font-size: 16px
+.contact-section {
+    width: 100%;
 }
+
+        .contact-section .btn {
+            font-size: 1.2rem;  /* Increase button font size */
+            padding: 10px 20px; /* Add padding for better spacing */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+        }
+
+        .contact-section .btn i {
+            margin-right: 10px; /* Space out the icon and text */
+        }
+
+        .contact-section .btn:hover {
+            background-color: #1f4061; /* Change background color on hover */
+            transform: translateY(-2px); /* Slightly raise the button on hover */
+        }
+
+        .social-icons a {
+            font-size: 2rem; /* Increase icon size */
+            margin: 0 15px; /* Add spacing between icons */
+            transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2); /* Make icons larger on hover */
+            color: #0d6efd; /* Change icon color on hover */
+        }
 @media (max-width: 768px) {
     .about_us, .numbers {
         width: 100%; /* Full width on smaller screens */
