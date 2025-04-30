@@ -1,5 +1,5 @@
 .con {
-    background-color: rgba(211, 104, 147, 0.4); /* Semi-transparent background */
+    background-color: var(--third-color); /* Background color for the form container */
     padding: 20px; /* Reduced padding for better responsiveness */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
@@ -11,7 +11,7 @@
 .con h1 {
     margin-bottom: 20px; /* Space below the heading */
     font-size: 2em; /* Adjust heading size for responsiveness */
-    color: var(--second-color); /* Set heading color for contrast */
+    color: var(--white-color); /* Set heading color for contrast */
     text-align: center; /* Center text */
     font-weight: bold;
 }

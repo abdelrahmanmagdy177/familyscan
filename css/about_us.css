@@ -25,7 +25,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 3px solid #d36893;
+    border: 3px solid var(--third-color);
     margin-bottom: 20px; /* Add space below this div */
     text-align: right;
 }
