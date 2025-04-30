@@ -4,12 +4,14 @@
     margin: 0;
     padding: 0;
 }
+
+.navbar-brand .logo {
+    width: 100px;
+    height: 80px;
+}
 a{
     text-decoration: none;
 
-}
-body{
-    background-color: var(--main-color);
 }
 header{
     width: 100%;
