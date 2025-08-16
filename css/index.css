@@ -1,31 +1,31 @@
-/* Full viewport height styling */
+
 .full-height {
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
 }
 
-/* Background image styling */
+
 .image-side {
     background-image: url('../123.png');
-    background-size: 120%; /* Scale the image to 120% of the container size */
+    background-size: 120%; 
     background-position: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     background-repeat: no-repeat;
 }
 
-/* Text section styling */
+
 .text-side {
     display: flex;
-    align-items: center; /* Center text vertically */
-    justify-content: center; /* Center text horizontally */
-    height: 100vh; /* Full viewport height */
-    text-align: center; /* Center text inside text container */
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    text-align: center; 
 }
 
 
 .text-side h1 {
     font-size: 55px;
     margin: 0;
-    color: #333; /* Text color */
+    color: #333; 
 }
 
 .text-side .main_title {
@@ -34,11 +34,11 @@
 
 
 
-/* Ensures the card images are responsive and maintain aspect ratio */
+
 .card-img-top {
-    width: 100%; /* Make sure the image takes the full width of the card */
-    height: 200px; /* Fixed height for consistent card layout */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
 }
 .card{
     border-radius: 14px;
@@ -53,156 +53,156 @@
 }
 
         .contact-section .btn {
-            font-size: 1.2rem;  /* Increase button font size */
-            padding: 10px 20px; /* Add padding for better spacing */
-            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+            font-size: 1.2rem;  
+            padding: 10px 20px; 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
         }
 
         .contact-section .btn i {
-            margin-right: 10px; /* Space out the icon and text */
+            margin-right: 10px; 
         }
 
         .contact-section .btn:hover {
-            background-color: #0056b3; /* Change background color on hover */
-            transform: translateY(-2px); /* Slightly raise the button on hover */
+            background-color: #0056b3; 
+            transform: translateY(-2px); 
         }
 
         .social-icons a {
-            font-size: 2rem; /* Increase icon size */
-            margin: 0 15px; /* Add spacing between icons */
-            transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+            font-size: 2rem; 
+            margin: 0 15px; 
+            transition: transform 0.3s ease, color 0.3s ease; 
         }
 
         .social-icons a:hover {
-            transform: scale(1.2); /* Make icons larger on hover */
-            color: #0d6efd; /* Change icon color on hover */
+            transform: scale(1.2); 
+            color: #0d6efd; 
         }
-/* Responsive adjustments */
+
 @media (max-width: 767px) {
     .card-img-top {
-        height: 150px; /* Adjust height for smaller screens */
+        height: 150px; 
     }
 }
 
-/* Why Us section styling */
-/* Why Us section styling */
+
+
 .why_us_container {
-    position: relative; /* Ensure the container has a positioning context for the pseudo-element */
-    margin: 40px auto; /* Add space above and below, centered horizontally */
-    width: 55%; /* Make it more flexible with relative width */
-    max-width: 1200px; /* Optional: set a max-width for larger screens */
+    position: relative; 
+    margin: 40px auto; 
+    width: 55%; 
+    max-width: 1200px; 
     border-radius: 7px;
-    overflow: hidden; /* Prevent content from overflowing */
-    padding: 20px; /* Adjust padding for better spacing */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visual appearance */
+    overflow: hidden; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .why_us_container::before {
-    content: ''; /* Empty content for the pseudo-element */
-    position: absolute; /* Position it absolutely within the container */
+    content: ''; 
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--third-color); /* Background color of the container */
-    opacity: 0.33; /* Opacity for the background */
-    z-index: -1; /* Ensure it is behind the content */
+    background-color: var(--newbrand-main-color); 
+    opacity: 0.33; 
+    z-index: -1; 
 }
 
 .why_us_container h1,
 .why_us_container p {
-    position: relative; /* Ensure text is positioned above the pseudo-element */
+    position: relative; 
     color: var(--second-color);
 }
 
 .why_us_container h1 {
     font-weight: bold;
-    font-size: 2em; /* Adjust font size relative to container */
-    margin-bottom: 20px; /* Add spacing below the heading */
+    font-size: 2em; 
+    margin-bottom: 20px; 
 }
 
 .why_us_container p {
     text-align: right;
-    font-size: 1.2em; /* Adjust font size relative to container */
+    font-size: 1.2em; 
     font-weight: bold;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 991px) {
     .why_us_container {
-        width: 95%; /* Adjust width for medium screens */
-        padding: 15px; /* Adjust padding for medium screens */
+        width: 95%; 
+        padding: 15px; 
     }
 
     .why_us_container h1 {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
+        font-size: 1.5em; 
     }
 
     .why_us_container p {
-        font-size: 1em; /* Adjust font size for smaller screens */
+        font-size: 1em; 
     }
 }
 
 @media (max-width: 767px) {
     .why_us_container {
-        width: 80%; /* Full width for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
+        width: 80%; 
+        padding: 10px; 
     }
 
     .why_us_container h1 {
-        font-size: 1.2em; /* Adjust font size for small screens */
+        font-size: 1.2em; 
     }
 
     .why_us_container p {
-        font-size: 0.9em; /* Adjust font size for small screens */
+        font-size: 0.9em; 
     }
 }
 
-/* FAQ section styling */
+
 .FAQ {
-    background-color: #f8f9fa; /* Light background color */
-    padding: 30px 0; /* Top and bottom padding */
+    background-color: #f8f9fa; 
+    padding: 30px 0; 
     width: 55%;
-    margin: 40px auto; /* Add space above and below, centered horizontally */
+    margin: 40px auto; 
 }
 
 @media (max-width: 767px) {
     .FAQ {
-        width: 80%; /* Full width for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
+        width: 80%; 
+        padding: 10px; 
     }
 }
     .accordion-button {
-        background-color: #007bff; /* Primary button color */
-        color: white; /* Button text color */
-        font-weight: bold; /* Button text weight */
-        border: none; /* Remove border */
-        transition: background-color 0.3s ease; /* Smooth transition for background color */
+        background-color: #007bff; 
+        color: white; 
+        font-weight: bold; 
+        border: none; 
+        transition: background-color 0.3s ease; 
     }
 
     .accordion-button:not(.collapsed) {
-        background-color: #0056b3; /* Darker color when expanded */
-        color: white; /* Ensure text color is readable */
+        background-color: #0056b3; 
+        color: white; 
     }
 
     .accordion-button:hover {
-        background-color: #0056b3; /* Color on hover */
+        background-color: #0056b3; 
     }
 
     .accordion-body {
-        background-color: white; /* White background for body */
-        color: #333; /* Text color */
-        padding: 20px; /* Padding inside the body */
-        border-top: 1px solid #e9ecef; /* Border at the top */
+        background-color: white; 
+        color: #333; 
+        padding: 20px; 
+        border-top: 1px solid #e9ecef; 
     }
 
     .accordion-item {
-        border: 1px solid #e9ecef; /* Border around each item */
-        border-radius: 5px; /* Rounded corners */
-        margin-bottom: 10px; /* Spacing between items */
+        border: 1px solid #e9ecef; 
+        border-radius: 5px; 
+        margin-bottom: 10px; 
     }
 
-    /* Floating Action Buttons styling */
+    
     .floating-buttons {
         position: fixed;
         bottom: 20px;
@@ -235,13 +235,13 @@
         transition: background-color 0.3s, transform 0.3s;
     }
 
-    /* Infinity animation for social media buttons */
+    
     @keyframes infinity {
         0% {
             transform: translateY(0);
         }
         50% {
-            transform: translateY(-10px); /* Adjust height as needed */
+            transform: translateY(-10px); 
         }
         100% {
             transform: translateY(0);
@@ -251,11 +251,11 @@
     .floating-buttons .whatsapp-button,
     .floating-buttons .call_us-button
 {
-        animation: infinity 2s infinite; /* Apply the animation */
+        animation: infinity 2s infinite; 
     }
 
     .whatsapp-button {
-        background-color: #25D366; /* WhatsApp green */
+        background-color: #25D366; 
     }
 
     .whatsapp-button:hover {
@@ -263,7 +263,7 @@
     }
 
     .facebook-button {
-        background-color: #3b5998; /* Facebook blue */
+        background-color: #3b5998; 
     }
 
     .facebook-button:hover {
@@ -271,20 +271,20 @@
     }
 
     .instagram-button {
-        background-color: #c13584; /* Instagram pink */
+        background-color: #c13584; 
     }
 
     .instagram-button:hover {
         background-color: #bc2a8d;
     }
 .tiktok-button{
-    background-color: #fe2c55; /* TikTok Red */
+    background-color: #fe2c55; 
 }
 
 
     #upButton {
-        display: none; /* Hide initially */
-        background-color: #343a40; /* Dark color for the up button */
+        display: none; 
+        background-color: #343a40; 
         color: white;
         font-size: 30px;
         width: 60px;
@@ -312,11 +312,11 @@
         transform: translateY(100%);
     }
 
-    /* Footer styling */
+    
     .footer {
-        background-color: #343a40; /* Dark background */
-        color: #f8f9fa; /* Light text color */
-        padding: 20px 0; /* Add padding for better spacing */
+        background-color: #343a40; 
+        color: #f8f9fa; 
+        padding: 20px 0; 
         text-align: center;
     }
 
@@ -325,20 +325,20 @@
     }
 
     .footer .social-icons a {
-        font-size: 1.5rem; /* Larger icons */
-        margin: 0 10px; /* Space between icons */
-        color: #f8f9fa; /* Icon color */
-        transition: color 0.3s; /* Smooth color transition */
+        font-size: 1.5rem; 
+        margin: 0 10px; 
+        color: #f8f9fa; 
+        transition: color 0.3s; 
     }
 
     .footer .social-icons a:hover {
-        color: #adb5bd; /* Light gray on hover */
+        color: #adb5bd; 
     }
 
 
 @media (max-width: 767px) {
     .image-side {
-        display: none; /* Adjust height for smaller screens */
+        display: none; 
         .text-side{
             height: 50vh;
             margin-bottom: 10px;

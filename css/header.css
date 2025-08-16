@@ -21,7 +21,7 @@ background-color: var(--white-color);
 
 }
 .navbar{
-    z-index: 1000; /* Ensure this is higher than other content */
+    z-index: 1000; 
 
 }
 .navbar-brand img {
@@ -30,10 +30,10 @@ background-color: var(--white-color);
     border-radius: 20%;
 }
 .dropdown-menu {
-    background-color: #f8f9fa; /* Background color of dropdown menu */
-    border-color: #ddd; /* Border color of dropdown menu */
+    background-color: #f8f9fa; 
+    border-color: #ddd; 
 }
-/* Custom style for shifting links */
+
 .navbar-nav {
-    margin-left: -40px; /* Adjust as needed */
+    margin-left: -40px; 
 }

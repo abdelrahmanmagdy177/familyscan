@@ -1,20 +1,20 @@
 
 
 header {
-    /* Ensure you have a header with some height */
-    height: 60px; /* Example height; adjust as needed */
-    background-color: #f8f9fa; /* Example background color */
-    border-bottom: 1px solid #ccc; /* Example bottom border */
-    position: relative; /* Ensure the header stays in place */
+    
+    height: 60px; 
+    background-color: #f8f9fa; 
+    border-bottom: 1px solid #ccc; 
+    position: relative; 
 }
 
 .con {
-    width: 80%; /* Adjust width as needed */
-    margin: 20px auto; /* Center the container horizontally and add vertical margin */
-    padding: 20px; /* Add padding for spacing */
+    width: 80%; 
+    margin: 20px auto; 
+    padding: 20px; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center; 
 }
 
 .about_us {
@@ -25,8 +25,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 3px solid var(--third-color);
-    margin-bottom: 20px; /* Add space below this div */
+    border: 3px solid var(--newbrand-main-color);
+    margin-bottom: 20px; 
     text-align: right;
 }
 
@@ -42,33 +42,33 @@ header {
 }
 
         .contact-section .btn {
-            font-size: 1.2rem;  /* Increase button font size */
-            padding: 10px 20px; /* Add padding for better spacing */
-            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+            font-size: 1.2rem;  
+            padding: 10px 20px; 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
         }
 
         .contact-section .btn i {
-            margin-right: 10px; /* Space out the icon and text */
+            margin-right: 10px; 
         }
 
         .contact-section .btn:hover {
-            background-color: #1f4061; /* Change background color on hover */
-            transform: translateY(-2px); /* Slightly raise the button on hover */
+            background-color: #1f4061; 
+            transform: translateY(-2px); 
         }
 
         .social-icons a {
-            font-size: 2rem; /* Increase icon size */
-            margin: 0 15px; /* Add spacing between icons */
-            transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+            font-size: 2rem; 
+            margin: 0 15px; 
+            transition: transform 0.3s ease, color 0.3s ease; 
         }
 
         .social-icons a:hover {
-            transform: scale(1.2); /* Make icons larger on hover */
-            color: #0d6efd; /* Change icon color on hover */
+            transform: scale(1.2); 
+            color: #0d6efd; 
         }
 @media (max-width: 768px) {
     .about_us, .numbers {
-        width: 100%; /* Full width on smaller screens */
-        text-align: center; /* Center text on smaller screens */
+        width: 100%; 
+        text-align: center; 
     }
 }
